@@ -33,8 +33,6 @@ function postRequest($url, $data) {
     );
     curl_setopt_array($ch, $curlConfig);
     $result = curl_exec($ch);
-    //print_r(curl_getinfo($ch)); echo '<br/><br/>';
-    //print_r($result);
     curl_close($ch);
     return $result;
 }
@@ -154,6 +152,5 @@ else {
 }
 
 echo json_encode($return_message);
-
 
 ?>

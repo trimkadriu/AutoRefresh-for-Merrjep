@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Per shpalljet ne MerrJep.com</title>
+    <title>For posts on MerrJep.com</title>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <style type="text/css">	table{font-family:verdana,arial,sans-serif;font-size:11px;color:#333;border-width:1px;border-color:#666;border-collapse:collapse}table caption{font-family:verdana,arial,sans-serif;font-size:18px;font-weight:700;color:#333;border-width:1px;border-color:#666;border-collapse:collapse;margin-bottom:15px}table th{border-width:1px;padding:8px;border-style:solid;border-color:#666;background-color:#dedede}table td{border-width:1px;padding:8px;border-style:solid;border-color:#666;background-color:#fff}#floatingCirclesG{position:relative;width:48px;height:48px;-moz-transform:scale(0.6);-webkit-transform:scale(0.6);-ms-transform:scale(0.6);-o-transform:scale(0.6);transform:scale(0.6)}.f_circleG{position:absolute;background-color:#FFF;height:9px;width:9px;-moz-border-radius:4px;-moz-animation-name:f_fadeG;-moz-animation-duration:1.04s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear;-webkit-border-radius:4px;-webkit-animation-name:f_fadeG;-webkit-animation-duration:1.04s;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-ms-border-radius:4px;-ms-animation-name:f_fadeG;-ms-animation-duration:1.04s;-ms-animation-iteration-count:infinite;-ms-animation-direction:linear;-o-border-radius:4px;-o-animation-name:f_fadeG;-o-animation-duration:1.04s;-o-animation-iteration-count:infinite;-o-animation-direction:linear;border-radius:4px;animation-name:f_fadeG;animation-duration:1.04s;animation-iteration-count:infinite;animation-direction:linear}#frotateG_01{left:0;top:20px;-moz-animation-delay:.39s;-webkit-animation-delay:.39s;-ms-animation-delay:.39s;-o-animation-delay:.39s;animation-delay:.39s}#frotateG_02{left:6px;top:6px;-moz-animation-delay:.52s;-webkit-animation-delay:.52s;-ms-animation-delay:.52s;-o-animation-delay:.52s;animation-delay:.52s}#frotateG_03{left:20px;top:0;-moz-animation-delay:.65s;-webkit-animation-delay:.65s;-ms-animation-delay:.65s;-o-animation-delay:.65s;animation-delay:.65s}#frotateG_04{right:6px;top:6px;-moz-animation-delay:.78s;-webkit-animation-delay:.78s;-ms-animation-delay:.78s;-o-animation-delay:.78s;animation-delay:.78s}#frotateG_05{right:0;top:20px;-moz-animation-delay:.91s;-webkit-animation-delay:.91s;-ms-animation-delay:.91s;-o-animation-delay:.91s;animation-delay:.91s}#frotateG_06{right:6px;bottom:6px;-moz-animation-delay:1.04s;-webkit-animation-delay:1.04s;-ms-animation-delay:1.04s;-o-animation-delay:1.04s;animation-delay:1.04s}#frotateG_07{left:20px;bottom:0;-moz-animation-delay:1.17s;-webkit-animation-delay:1.17s;-ms-animation-delay:1.17s;-o-animation-delay:1.17s;animation-delay:1.17s}#frotateG_08{left:6px;bottom:6px;-moz-animation-delay:1.3s;-webkit-animation-delay:1.3s;-ms-animation-delay:1.3s;-o-animation-delay:1.3s;animation-delay:1.3s}@-moz-keyframes f_fadeG{0%{background-color:#000}100%{background-color:#FFF}}@-webkit-keyframes f_fadeG{0%{background-color:#000}100%{background-color:#FFF}}@-ms-keyframes f_fadeG{0%{background-color:#000}100%{background-color:#FFF}}@-o-keyframes f_fadeG{0%{background-color:#000}100%{background-color:#FFF}}@keyframes f_fadeG{0%{background-color:#000}100%{background-color:#FFF}}
     </style>
@@ -10,35 +10,35 @@
 <body>
 <div style="margin: 0 auto; width: 400px; margin-top: 100px">
     <table>
-        <caption>Vendose shpalljen ne fillim te listes ne MerrJep.com</caption>
+        <caption>Put your post at the beginning of the list on MerrJep.com</caption>
         <thead></thead>
         <tbody>
         <tr>
-            <td>URL i shpalljes:</td>
+            <td>URL of the post:</td>
             <td><input type="text" id="url" value=""/></td>
         </tr>
         <tr>
-            <td>Fjalekalimi i shpalljes:</td>
+            <td>Password of the post:</td>
             <td><input type="password" id="fjalekalimi" value=""/></td>
         </tr>
         <tr>
-            <td>Koha per rivendosje automatike:</td>
+            <td>Time for automatic post refresh:</td>
             <td><input id="koha" type="number" value="15" min="1" maxlength="4" style="width: 120px;"/> (min)</td>
         </tr>
         <tr>
-            <td>Deri tani eshte vendosur:</td>
-            <td><input id="deriTani" type="number" value="0" style="width: 60px;" disabled/> here</td>
+            <td>Refreshed until now:</td>
+            <td><input id="untilNow" type="number" value="0" style="width: 60px;" disabled/> times</td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <input type="button" id="dergoBtn" value="Vendose"/>
-                <input type="button" id="ndaloBtn" value="Ndalo" disabled/>
+                <input type="button" id="dergoBtn" value="Refresh it"/>
+                <input type="button" id="ndaloBtn" value="Stop" disabled/>
             </td>
         </tr>
         </tbody>
     </table>
-    <div id="rezultati" style="display:none;text-align:center; background: #FFFDC8; width: 360px; padding: 10px;color: #F00;border: 1px solid #666666;">
+    <div id="resultDiv" style="display:none;text-align:center; background: #FFFDC8; width: 360px; padding: 10px;color: #F00;border: 1px solid #666666;">
         <div id="floatingCirclesG" style="margin:0 auto;">
             <div class="f_circleG" id="frotateG_01">
             </div>
@@ -57,7 +57,7 @@
             <div class="f_circleG" id="frotateG_08">
             </div>
         </div>
-        <span>Duke e vendosur...</span>
+        <span>Refreshing...</span>
     </div>
 </div>
 <div id="tempData" style="display:none;"><form></form></div>
@@ -66,40 +66,40 @@
     var url = "";
     var item = "";
     var password = "";
-    var koha = 15;
+    var time = 15;
     var temp = "";
     var result = "";
-    var shpallja;
+    var post;
 
     $(document).ready(function() {
         $('#dergoBtn').click(function() {
             url = $('#url').val();
             item = url.substring(url.lastIndexOf("=") + 1, url.length);
             password = $('#fjalekalimi').val();
-            koha = parseInt($('#koha').val());
+            time = parseInt($('#time').val());
             temp = $('#tempData form');
-            if(url === "" || url.lastIndexOf("=") === "-1" || password === "" || koha <= 0 || parseInt($('#qyteti').val()) == 0) {
-                alert("GABIM ! \nPlotesoj te gjitha fushat.");
+            if(url === "" || url.lastIndexOf("=") === "-1" || password === "" || time <= 0 || parseInt($('#qyteti').val()) == 0) {
+                alert("Error ! \nPlease fill all the fields.");
                 return;
             }
             $(this).attr("disabled", "disabled");
             $('#ndaloBtn').removeAttr("disabled");
-            vendoseShpalljen();
-            shpallja = setInterval(function() {
-                vendoseShpalljen();
-            }, koha*60000);
+            autoRefreshPOST();
+            post = setInterval(function() {
+                autoRefreshPOST();
+            }, time*60000);
         });
         $('#ndaloBtn').click(function() {
-            window.clearInterval(shpallja);
+            window.clearInterval(post);
             $(this).attr("disabled", "disabled");
             $('#dergoBtn').removeAttr("disabled");
         });
     });
 
-    function vendoseShpalljen(){
-        $('#rezultati').show();
-        console.log('duke vendosur...');
-        var reqUrl = location.href.substring(0, location.href.lastIndexOf("/")) + "/vendose.php"; console.log(reqUrl);
+    function autoRefreshPOST(){
+        $('#resultDiv').show();
+        console.log('Refreshing...');
+        var reqUrl = location.href.substring(0, location.href.lastIndexOf("/")) + "/refresh.php";
         $.ajax({
             url: reqUrl,
             type: "POST",
@@ -109,12 +109,11 @@
             },
             success: function(data) {
                 if(data === "SUCCESS") {
-                    console.log('U vendos');
-                    $('#rezultati').hide();
-                    $('#deriTani').val(parseInt($('#deriTani').val()) + 1);
+                    $('#resultDiv').hide();
+                    $('#untilNow').val(parseInt($('#untilNow').val()) + 1);
                 }
                 else if(data === "ERROR") {
-                    $('#rezultati').hide();
+                    $('#resultDiv').hide();
                     console.log('PROBLEM');
                 }
             }
