@@ -1,0 +1,9 @@
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\bin\Debug\Auto Refresh for MerrJep.exe.config
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\bin\Debug\Auto Refresh for MerrJep.exe
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\bin\Debug\Auto Refresh for MerrJep.pdb
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.csprojResolveAssemblyReference.cache
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto_Refresh_for_MerrJep.Properties.Resources.resources
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.csproj.GenerateResource.Cache
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.exe
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.pdb
+C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto_Refresh_for_MerrJep.mainForm.resources
