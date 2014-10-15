@@ -7,3 +7,13 @@ C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\o
 C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.exe
 C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto Refresh for MerrJep.pdb
 C:\Users\trim.kadriu\Desktop\Auto Refresh for MerrJep\Auto Refresh for MerrJep\obj\Debug\Auto_Refresh_for_MerrJep.mainForm.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Debug\Auto Refresh for MerrJep.exe.config
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto Refresh for MerrJep.exe
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto Refresh for MerrJep.pdb
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Debug\Auto Refresh for MerrJep.exe
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Debug\Auto Refresh for MerrJep.pdb
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto Refresh for MerrJep.csprojResolveAssemblyReference.cache
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_for_MerrJep.mainForm.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_for_MerrJep.Properties.Resources.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto Refresh for MerrJep.csproj.GenerateResource.Cache
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_for_MerrJep.APIServerUrlForm.resources
