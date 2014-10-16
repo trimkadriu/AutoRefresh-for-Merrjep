@@ -19,11 +19,11 @@
         </tr>
         <tr>
             <td>Password of the post:</td>
-            <td><input type="password" id="fjalekalimi" value=""/></td>
+            <td><input type="password" id="password" value=""/></td>
         </tr>
         <tr>
             <td>Time for automatic post refresh:</td>
-            <td><input id="koha" type="number" value="15" min="1" maxlength="4" style="width: 120px;"/> (min)</td>
+            <td><input id="time" type="number" value="15" min="1" maxlength="4" style="width: 120px;"/> (min)</td>
         </tr>
         <tr>
             <td>Refreshed until now:</td>
@@ -32,8 +32,8 @@
         <tr>
             <td></td>
             <td>
-                <input type="button" id="dergoBtn" value="Refresh it"/>
-                <input type="button" id="ndaloBtn" value="Stop" disabled/>
+                <input type="button" id="startBtn" value="Refresh it"/>
+                <input type="button" id="stopBtn" value="Stop" disabled/>
             </td>
         </tr>
         </tbody>
@@ -72,10 +72,10 @@
     var post;
 
     $(document).ready(function() {
-        $('#dergoBtn').click(function() {
+        $('#startBtn').click(function() {
             url = $('#url').val();
             item = url.substring(url.lastIndexOf("=") + 1, url.length);
-            password = $('#fjalekalimi').val();
+            password = $('#password').val();
             time = parseInt($('#time').val());
             temp = $('#tempData form');
             if(url === "" || url.lastIndexOf("=") === "-1" || password === "" || time <= 0 || parseInt($('#qyteti').val()) == 0) {
@@ -83,16 +83,16 @@
                 return;
             }
             $(this).attr("disabled", "disabled");
-            $('#ndaloBtn').removeAttr("disabled");
+            $('#stopBtn').removeAttr("disabled");
             autoRefreshPOST();
             post = setInterval(function() {
                 autoRefreshPOST();
             }, time*60000);
         });
-        $('#ndaloBtn').click(function() {
+        $('#stopBtn').click(function() {
             window.clearInterval(post);
             $(this).attr("disabled", "disabled");
-            $('#dergoBtn').removeAttr("disabled");
+            $('#startBtn').removeAttr("disabled");
         });
     });
 

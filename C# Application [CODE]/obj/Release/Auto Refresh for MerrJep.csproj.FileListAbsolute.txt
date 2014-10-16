@@ -1,0 +1,9 @@
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Release\Auto Refresh for MerrJep.exe.config
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Release\Auto Refresh for MerrJep.exe
+D:\Trim\autorefresh-for-merrjep\C# Application\bin\Release\Auto Refresh for MerrJep.pdb
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto_Refresh_for_MerrJep.APIServerUrlForm.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto_Refresh_for_MerrJep.MainForm.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto_Refresh_for_MerrJep.Properties.Resources.resources
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto Refresh for MerrJep.csproj.GenerateResource.Cache
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto Refresh for MerrJep.exe
+D:\Trim\autorefresh-for-merrjep\C# Application\obj\Release\Auto Refresh for MerrJep.pdb
