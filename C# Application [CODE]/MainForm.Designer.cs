@@ -76,11 +76,12 @@
             // 
             // btnStart
             // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(428, 227);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(169, 47);
             this.btnStart.TabIndex = 9;
-            this.btnStart.Text = "Start AutoRefresh !!!";
+            this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -151,7 +152,7 @@
             0,
             0});
             this.txtTime.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
@@ -159,7 +160,7 @@
             this.txtTime.Size = new System.Drawing.Size(147, 20);
             this.txtTime.TabIndex = 7;
             this.txtTime.Value = new decimal(new int[] {
-            15,
+            10,
             0,
             0,
             0});
@@ -191,6 +192,7 @@
             this.btnServerUrlConf.TabIndex = 13;
             this.btnServerUrlConf.Text = "API Server URL\r\n[ configure ]";
             this.btnServerUrlConf.UseVisualStyleBackColor = true;
+            this.btnServerUrlConf.Click += new System.EventHandler(this.btnServerUrlConf_Click);
             // 
             // MainForm
             // 

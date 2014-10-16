@@ -61,6 +61,7 @@
             // 
             // APIServerUrlForm
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 115);
@@ -68,6 +69,7 @@
             this.Controls.Add(this.txtApiServerUrl);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "APIServerUrlForm";
@@ -76,6 +78,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "API Server URL";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.APIServerUrlForm_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.APIServerUrlForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

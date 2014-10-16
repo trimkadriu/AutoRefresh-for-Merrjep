@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,11 +36,15 @@ namespace Auto_Refresh_for_MerrJep
             }
             else
             {
+                apiServerUrl = txtApiServerUrl.Text;
                 if (isSet)
                 {
-                    // UPDATE CONF FILE
+                    using (FileStream fs = File.Create(AppDomain.CurrentDomain.BaseDirectory + "conf.ini"))
+                    {
+                        Byte[] info = new UTF8Encoding(true).GetBytes("ApiServerUrl=" + apiServerUrl);
+                        fs.Write(info, 0, info.Length);
+                    }
                 }
-                apiServerUrl = txtApiServerUrl.Text;
                 this.DialogResult = DialogResult.Yes;
             }
         }
@@ -50,6 +55,14 @@ namespace Auto_Refresh_for_MerrJep
                 this.DialogResult = DialogResult.No;
             else
                 this.DialogResult = DialogResult.Yes;
+        }
+
+        private void APIServerUrlForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
     }
 }
