@@ -13,13 +13,21 @@ namespace Auto_Refresh_for_MerrJep
     public partial class APIServerUrlForm : Form
     {
         public string apiServerUrl { get; set; }
+        bool isSet;
+        String currentApiServerUrl;
 
-        public APIServerUrlForm()
+        public APIServerUrlForm(bool isSet, String currentApiServerUrl)
         {
             InitializeComponent();
+            this.isSet = isSet;
+            this.currentApiServerUrl = currentApiServerUrl;
+            if(isSet)
+            {
+                txtApiServerUrl.Text = currentApiServerUrl;
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(txtApiServerUrl.Text))
             {
@@ -27,17 +35,21 @@ namespace Auto_Refresh_for_MerrJep
             }
             else
             {
+                if (isSet)
+                {
+                    // UPDATE CONF FILE
+                }
                 apiServerUrl = txtApiServerUrl.Text;
-                this.Close();
+                this.DialogResult = DialogResult.Yes;
             }
         }
 
         private void APIServerUrlForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(txtApiServerUrl.Text))
-            {
-                Application.Exit();
-            }
+            if (e.CloseReason.Equals(CloseReason.UserClosing))
+                this.DialogResult = DialogResult.No;
+            else
+                this.DialogResult = DialogResult.Yes;
         }
     }
 }

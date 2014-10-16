@@ -11,42 +11,15 @@ using System.Windows.Forms;
 
 namespace Auto_Refresh_for_MerrJep
 {
-    public partial class mainForm : Form
+    public partial class MainForm : Form
     {
-        String apiServerUrl;
+        public String apiServerUrl;
+        bool isStarted = false;
 
-        public mainForm()
+        public MainForm(String apiServerUrl)
         {
             InitializeComponent();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-            String configurationFile = AppDomain.CurrentDomain.BaseDirectory + "conf.ini";
-            if (File.Exists(@configurationFile))
-            {
-                apiServerUrl = "";
-                using (StreamReader sr = File.OpenText(configurationFile))
-                {
-                    string s = "";
-                    while ((s = sr.ReadLine()) != null)
-                    {
-                        Console.WriteLine(s);
-                    }
-                }
-            }
-            else
-            {
-                APIServerUrlForm apiServerUrlForm = new APIServerUrlForm();
-                apiServerUrlForm.ShowDialog();
-                apiServerUrl = apiServerUrlForm.apiServerUrl;
-                using (FileStream fs = File.Create(configurationFile))
-                {
-                    Byte[] info = new UTF8Encoding(true).GetBytes("ApiServerUrl=" + apiServerUrl);
-                    fs.Write(info, 0, info.Length);
-                }
-            }
+            this.apiServerUrl = apiServerUrl;
         }
 
         private void btnAddUrl_Click(object sender, EventArgs e)
@@ -68,6 +41,25 @@ namespace Auto_Refresh_for_MerrJep
             foreach (DataGridViewRow item in this.dgwList.SelectedRows)
             {
                 dgwList.Rows.RemoveAt(item.Index);
+            }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            if(!isStarted) 
+            {
+                if (dgwList.Rows.Count == 0)
+                {
+                    MessageBox.Show(null, "Error! Please add at least one Post URL", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                btnStart.Text = "Stop AutoRefresh !!!";
+                isStarted = true;
+            }
+            else
+            {
+                btnStart.Text = "Start AutoRefresh !!!";
+                isStarted = false;
             }
         }
     }

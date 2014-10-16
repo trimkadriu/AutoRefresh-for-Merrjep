@@ -1,6 +1,6 @@
 ﻿namespace Auto_Refresh_for_MerrJep
 {
-    partial class mainForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.txtUrlOfPost = new System.Windows.Forms.TextBox();
             this.btnAddUrl = new System.Windows.Forms.Button();
@@ -82,6 +82,7 @@
             this.btnStart.TabIndex = 9;
             this.btnStart.Text = "Start AutoRefresh !!!";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // dgwList
             // 
@@ -191,8 +192,9 @@
             this.btnServerUrlConf.Text = "API Server URL\r\n[ configure ]";
             this.btnServerUrlConf.UseVisualStyleBackColor = true;
             // 
-            // mainForm
+            // MainForm
             // 
+            this.AcceptButton = this.btnStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 290);
@@ -211,10 +213,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "mainForm";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AutoRefresh for MerrJep.com © 2014 by Trim Kadriu";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTime)).EndInit();
             this.ResumeLayout(false);
