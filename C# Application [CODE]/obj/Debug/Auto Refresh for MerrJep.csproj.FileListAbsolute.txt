@@ -27,3 +27,13 @@ D:\xampp\htdocs\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_fo
 D:\xampp\htdocs\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_for_MerrJep.MainForm.resources
 D:\xampp\htdocs\autorefresh-for-merrjep\C# Application\obj\Debug\Auto_Refresh_for_MerrJep.Properties.Resources.resources
 D:\xampp\htdocs\autorefresh-for-merrjep\C# Application\obj\Debug\Auto Refresh for MerrJep.csproj.GenerateResource.Cache
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\bin\Debug\Auto Refresh for MerrJep.exe.config
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto Refresh for MerrJep.exe
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto Refresh for MerrJep.pdb
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\bin\Debug\Auto Refresh for MerrJep.exe
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\bin\Debug\Auto Refresh for MerrJep.pdb
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto Refresh for MerrJep.csprojResolveAssemblyReference.cache
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto_Refresh_for_MerrJep.APIServerUrlForm.resources
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto_Refresh_for_MerrJep.MainForm.resources
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto_Refresh_for_MerrJep.Properties.Resources.resources
+D:\xampp\htdocs\autorefresh-for-merrjep\C# Application [CODE]\obj\Debug\Auto Refresh for MerrJep.csproj.GenerateResource.Cache

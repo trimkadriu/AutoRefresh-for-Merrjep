@@ -34,8 +34,6 @@
             this.btnAddUrl = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.dgwList = new System.Windows.Forms.DataGridView();
-            this.UrlColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +41,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnRemoveUrl = new System.Windows.Forms.Button();
             this.btnServerUrlConf = new System.Windows.Forms.Button();
+            this.UrlColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StatusColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SuccessColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FailColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgwList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTime)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +97,9 @@
             this.dgwList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UrlColumn,
-            this.StatusColumn});
+            this.StatusColumn,
+            this.SuccessColumn,
+            this.FailColumn});
             this.dgwList.Location = new System.Drawing.Point(15, 41);
             this.dgwList.Name = "dgwList";
             this.dgwList.ReadOnly = true;
@@ -103,18 +107,6 @@
             this.dgwList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwList.Size = new System.Drawing.Size(582, 177);
             this.dgwList.TabIndex = 5;
-            // 
-            // UrlColumn
-            // 
-            this.UrlColumn.HeaderText = "URL of Post";
-            this.UrlColumn.Name = "UrlColumn";
-            this.UrlColumn.ReadOnly = true;
-            // 
-            // StatusColumn
-            // 
-            this.StatusColumn.HeaderText = "Status";
-            this.StatusColumn.Name = "StatusColumn";
-            this.StatusColumn.ReadOnly = true;
             // 
             // txtPassword
             // 
@@ -194,6 +186,32 @@
             this.btnServerUrlConf.UseVisualStyleBackColor = true;
             this.btnServerUrlConf.Click += new System.EventHandler(this.btnServerUrlConf_Click);
             // 
+            // UrlColumn
+            // 
+            this.UrlColumn.HeaderText = "URL of Post";
+            this.UrlColumn.Name = "UrlColumn";
+            this.UrlColumn.ReadOnly = true;
+            // 
+            // StatusColumn
+            // 
+            this.StatusColumn.HeaderText = "[Success]   |   [Fail]";
+            this.StatusColumn.Name = "StatusColumn";
+            this.StatusColumn.ReadOnly = true;
+            // 
+            // SuccessColumn
+            // 
+            this.SuccessColumn.HeaderText = "success";
+            this.SuccessColumn.Name = "SuccessColumn";
+            this.SuccessColumn.ReadOnly = true;
+            this.SuccessColumn.Visible = false;
+            // 
+            // FailColumn
+            // 
+            this.FailColumn.HeaderText = "fail";
+            this.FailColumn.Name = "FailColumn";
+            this.FailColumn.ReadOnly = true;
+            this.FailColumn.Visible = false;
+            // 
             // MainForm
             // 
             this.AcceptButton = this.btnStart;
@@ -232,8 +250,6 @@
         private System.Windows.Forms.Button btnAddUrl;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.DataGridView dgwList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UrlColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StatusColumn;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -241,6 +257,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRemoveUrl;
         private System.Windows.Forms.Button btnServerUrlConf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UrlColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StatusColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SuccessColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FailColumn;
     }
 }
 

@@ -37,7 +37,9 @@ namespace Auto_Refresh_for_MerrJep
             int index = dgwList.Rows.Add();
             DataGridViewRow row = dgwList.Rows[index];
             row.Cells["UrlColumn"].Value = url;
-            row.Cells["StatusColumn"].Value = "idle";
+            row.Cells["StatusColumn"].Value = "N/A";
+            row.Cells["SuccessColumn"].Value = "0";
+            row.Cells["FailColumn"].Value = "0";
             txtUrlOfPost.Text = "";
         }
 
@@ -114,7 +116,21 @@ namespace Auto_Refresh_for_MerrJep
                 {
                     MessageBox.Show(ex.Message);
                 }
-                row.Cells[1].Value = result;
+
+                int success = Int32.Parse(row.Cells["SuccessColumn"].Value.ToString());
+                int fail = Int32.Parse(row.Cells["FailColumn"].Value.ToString());
+                if (result.Equals("\"SUCCESS\""))
+                {
+                    success++;
+                    row.Cells["SuccessColumn"].Value = success;
+                    row.Cells["StatusColumn"].Value = "[" + success + "]   |   [" + fail + "]";
+                }
+                else
+                {
+                    fail++;
+                    row.Cells["FailColumn"].Value = fail;
+                    row.Cells["StatusColumn"].Value = "[" + success + "]   |   [" + fail + "]";
+                }
             }
         }
 
